@@ -513,3 +513,55 @@ function removeSentence(param) {
         document.getElementById("sentence-container").style.width = "35vw";
     }
 }
+
+function changeTab(tab) {
+    var calculator = document.getElementById("calculator-tab");
+    var ranking = document.getElementById("ranking-tab");
+    var tencodes = document.getElementById("10codes-tab");
+    var about = document.getElementById("about-tab");
+    if(tab == "calculator") {
+        document.getElementById("calculator").style.visibility = "visible";
+        document.getElementById("ranking").style.visibility = "hidden";
+        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "hidden";
+        calculator.classList.add("active");
+        ranking.classList.remove("active");
+        tencodes.classList.remove("active");
+        about.classList.remove("active");
+    } else if(tab == "ranking") {
+        document.getElementById("calculator").style.visibility = "hidden";
+        document.getElementById("ranking").style.visibility = "visible";
+        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "hidden";
+        calculator.classList.remove("active");
+        ranking.classList.add("active");
+        tencodes.classList.remove("active");
+        about.classList.remove("active");
+    } else if(tab == "10codes") {
+        document.getElementById("calculator").style.visibility = "hidden";
+        document.getElementById("ranking").style.visibility = "hidden";
+        document.getElementById("10codes").style.visibility = "visible";
+        document.getElementById("about").style.visibility = "hidden";
+        calculator.classList.remove("active");
+        ranking.classList.remove("active");
+        tencodes.classList.add("active");
+        about.classList.remove("active");
+    } else if(tab == "about") {
+        document.getElementById("calculator").style.visibility = "hidden";
+        document.getElementById("ranking").style.visibility = "hidden";
+        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "visible";
+        calculator.classList.remove("active");
+        ranking.classList.remove("active");
+        tencodes.classList.remove("active");
+        about.classList.add("active");
+    }
+}
+
+function miranda(value) {
+    if(value == 1) {
+        document.getElementById("miranda-main-container").style.visibility = "visible";
+    } else if(value == 0) {
+        document.getElementById("miranda-main-container").style.visibility = "hidden";
+    }
+}

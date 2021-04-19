@@ -69,6 +69,10 @@ ul.topnav li a.active {
     border: white 1px solid;
 }
 
+a {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
 
     ul.topnav li.right,
@@ -261,4 +265,72 @@ ul.topnav li a.active {
     bottom: 5px;
     right: 5px;
     color: white;
+}
+
+#miranda {
+    color: white;
+    background-image: linear-gradient(#1E1E1E, black);
+    width: 8vw;
+    height: 1.5vw;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    line-height: 1.5vw;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#miranda-main-container {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+#close-miranda {
+    position: relative;
+    float: right;
+    filter: invert(100%);
+    user-select: none;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#miranda-container {
+    border: 1px solid white;
+    background-image: linear-gradient(#1E1E1E, black);
+    width: 50vw;
+    height: 20vw;
+    margin: 10vw auto;
+}
+
+#miranda-title {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#miranda-text {
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+}
+
+#miranda-reminder {
+    color: white;
+    font-size: 1.25vw;
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
 }

@@ -13,10 +13,10 @@
         <div id="logo-text">Monoford County PD Helper</div>
     </div>
     <ul class="topnav">
-        <li><a class="active" href="#home">Charges Calculator</a></li>
-        <li><a href="#news">Ranking/Chain of Command</a></li>
-        <li><a href="#contact">Police 10-Codes</a></li>
-        <li><a href="#about">About/Other</a></li>
+        <li><a id="calculator-tab" class="active" onclick="changeTab('calculator')">Charges Calculator</a></li>
+        <li><a id="ranking-tab" onclick="changeTab('ranking')">Ranking/Chain of Command</a></li>
+        <li><a id="10codes-tab" onclick="changeTab('10codes')">Police 10-Codes</a></li>
+        <li><a id="about-tab" onclick="changeTab('about')">About/Other</a></li>
     </ul>
     <div id="calculator">
         <div id="titles-container">
@@ -36,6 +36,28 @@
 
         <div id="fine-title">Fine:</div>
         <div id="fine">$0</div>
+
+        <div id="miranda" onclick="miranda(1)">Miranda Rights</div>
+        <div id="miranda-main-container">
+            <div id="miranda-container">
+                <span id="close-miranda" onclick="miranda(0)" class="material-icons">close</span>
+                <div id="miranda-title">Miranda Rights</div>
+                <div id="miranda-text">You Have the Right to Remain Silent. Anything You Say can be Used Against You in a Court of Law. You Have the Right to Have an Attorney Present, if You Cannot Afford an Attorney, One Will Be Appointed to You.</div>
+                <div id="miranda-reminder">* Read these rights to a suspect before you question them.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ranking">
+
+    </div>
+
+    <div id="10codes">
+
+    </div>
+
+    <div id="about">
+
     </div>
 
     <span class="material-icons" id="warning">report_problem</span>
