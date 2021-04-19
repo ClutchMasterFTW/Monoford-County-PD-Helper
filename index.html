@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>Monoford County PD Helper</title>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="index.js"></script>
-    </body>
+<title>Monoford County PD Helper</title>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/logo.png" id="logo">
+        <div id="logo-text">Monoford County PD Helper</div>
+    </div>
+    <ul class="topnav">
+        <li><a class="active" href="#home">Charges Calculator</a></li>
+        <li><a href="#news">Ranking/Chain of Command</a></li>
+        <li><a href="#contact">Police 10-Codes</a></li>
+        <li><a href="#about">About/Other</a></li>
+    </ul>
+    <div id="calculator">
+        <div id="titles-container">
+            <div id="charges-title">Charges</div>
+            <div id="count">Count</div>
+            <div id="add">Add</div>
+            <div id="remove">Remove</div>
+        </div>
+        <div id="charges-container"></div>
+
+        <div id="divider"></div>
+        <div id="sentence-title">Sentence:</div>
+        <div id="sentence-container">
+            <div id="sentence">0</div>
+            <div id="sentence-units">year(s) (minutes)</div>
+        </div>
+
+        <div id="fine-title">Fine:</div>
+        <div id="fine">$0</div>
+    </div>
+
+    <span class="material-icons" id="warning">report_problem</span>
+    <div id="warning-text">If you experience any bugs, please send them to ClutchMasterFTW@gmail.com</div>
+
+    <div id="credits">Tool Created by <a href="https://monolithservers.com/forums/members/clutch-master-ftw.2510/"
+            target="_blank" id="link">ClutchMasterFTW</a> | v.0.3</div>
+    <script src="index.js"></script>
+</body>
+
 </html>

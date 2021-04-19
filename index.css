@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-SemiBold.woff2') format('woff2'),
+        url('fonts/Purista-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-Bold.woff2') format('woff2'),
+        url('fonts/Purista-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-Medium.woff2') format('woff2'),
+        url('fonts/Purista-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Purista';
+}
+
+html {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #141414;
+    box-shadow: -2px 2px 5px black;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 7vw;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: black;
+    border: black 1px solid;
+}
+
+ul.topnav li a.active {
+    border: white 1px solid;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+#header {
+    width: 100vw;
+    height: 60px;
+    background-color: #111111;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+#logo-text {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#titles-container {
+    display: -webkit-inline-box;
+}
+
+#charges-title {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 200px;
+}
+
+#count {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1vw;
+    position: relative;
+    top: 45px;
+    left: 510px;
+}
+
+#add {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1vw;
+    position: relative;
+    top: 45px;
+    left: 535px;
+}
+
+#remove {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1vw;
+    position: relative;
+    top: 45px;
+    left: 560px;
+}
+
+#charges-container {
+    background-color: black;
+    border: white 1px solid;
+    width: 775px;
+    margin-left: 190px;
+    height: 35vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#credits {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
+    color: white;
+}
+
+#link {
+    color: skyblue;
+}
+
+#divider {
+    background-color: white;
+    width: 35vw;
+    height: 3px;
+    position: relative;
+    left: 60vw;
+    top: -23vw;
+}
+
+#sentence-title {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    top: -36vw;
+    left: 60vw;
+}
+
+#sentence-container {
+    width: 35vw;
+    height: 8.5vw;
+    position: relative;
+    top: -36vw;
+    left: 60vw;
+    color: white;
+}
+
+#sentence {
+    font-size: 150px;
+    font-weight: 600;
+    position: relative;
+    top: -1vw;
+    display: inline;
+    color: #54ff00;
+    text-shadow: 3px 5px 1px black;
+}
+
+#sentence-units {
+    font-size: 35px;
+    display: inline;
+    position: relative;
+    top: -1.25vw;
+}
+
+#fine-title {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    top: -35vw;
+    left: 60vw;
+}
+
+#fine {
+    font-size: 150px;
+    font-weight: 600;
+    position: relative;
+    top: -35.5vw;
+    left: 60vw;
+    color: #54ff00;
+    text-shadow: 3px 5px 1px black;
+}
+
+#warning {
+    position: absolute;
+    bottom: 5px;
+    right: 575px;
+    user-select: none;
+    filter: invert(100%);
+}
+
+#warning-text {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+}
