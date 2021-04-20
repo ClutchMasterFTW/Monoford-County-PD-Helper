@@ -307,6 +307,7 @@ a {
     width: 50vw;
     height: 20vw;
     margin: 10vw auto;
+    box-shadow: 5px 5px 5px black;
 }
 
 #miranda-title {
