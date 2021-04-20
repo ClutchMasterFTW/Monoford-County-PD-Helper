@@ -522,7 +522,7 @@ function changeTab(tab) {
     if(tab == "calculator") {
         document.getElementById("calculator").style.visibility = "visible";
         document.getElementById("ranking").style.visibility = "hidden";
-        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("tencodes").style.visibility = "hidden";
         document.getElementById("about").style.visibility = "hidden";
         calculator.classList.add("active");
         ranking.classList.remove("active");
@@ -531,7 +531,7 @@ function changeTab(tab) {
     } else if(tab == "ranking") {
         document.getElementById("calculator").style.visibility = "hidden";
         document.getElementById("ranking").style.visibility = "visible";
-        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("tencodes").style.visibility = "hidden";
         document.getElementById("about").style.visibility = "hidden";
         calculator.classList.remove("active");
         ranking.classList.add("active");
@@ -540,7 +540,7 @@ function changeTab(tab) {
     } else if(tab == "10codes") {
         document.getElementById("calculator").style.visibility = "hidden";
         document.getElementById("ranking").style.visibility = "hidden";
-        document.getElementById("10codes").style.visibility = "visible";
+        document.getElementById("tencodes").style.visibility = "visible";
         document.getElementById("about").style.visibility = "hidden";
         calculator.classList.remove("active");
         ranking.classList.remove("active");
@@ -549,7 +549,7 @@ function changeTab(tab) {
     } else if(tab == "about") {
         document.getElementById("calculator").style.visibility = "hidden";
         document.getElementById("ranking").style.visibility = "hidden";
-        document.getElementById("10codes").style.visibility = "hidden";
+        document.getElementById("tencodes").style.visibility = "hidden";
         document.getElementById("about").style.visibility = "visible";
         calculator.classList.remove("active");
         ranking.classList.remove("active");
