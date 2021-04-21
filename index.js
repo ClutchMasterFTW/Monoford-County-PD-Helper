@@ -272,12 +272,141 @@ var charges = [
         sentence: 1.5,
         amount: 0,
         fine: 2000
+    },
+    charge39 = {
+        name: "Parked Illegally",
+        class: "Infraction",
+        sentence: 0,
+        amount: 0,
+        fine: 350
+    },
+    charge40 = {
+        name: "Attempted Murder",
+        class: "Felony",
+        sentence: 12.5,
+        amount: 0,
+        fine: 1000000
+    },
+    charge41 = {
+        name: "Attempted Murder of an LEO",
+        class: "Felony",
+        sentence: 15,
+        amount: 0,
+        fine: 1000000
     }
 ];
 var ranks = [
     rank1 = {
         name: "Police Chief",
-        insignia: 
+        insignia: 8,
+        description: "The head of the Police Department. The chief has various powers and absolute authority over all members of his department. The primary duties of the chief include oversight of officers, training cadets, and upkeeping the law.",
+        playerRequirements: "Requires Whitelist",
+        policeRequirements: "Requires Whitelist",
+        callsign: "Alpha"
+    },
+    rank2 = {
+        name: "Police Assistant Chief",
+        insignia: 7,
+        description: "The Assistant Chief is the second-in-command at the department. He supervises its operation and personnel when the Chief is occupied or has chosen to delegate responsibilities.",
+        playerRequirements: 100,
+        policeRequirements: 200,
+        callsign: "Alpha"
+    },
+    rank3 = {
+        name: "Police Lieutenant",
+        insignia: 6,
+        description: "The lieutenant is a high-ranking officer in the Police Department. During critical times, they are encouraged to step in as an acting chief, should the chief be incapacitated or unable to lead.",
+        playerRequirements: 75,
+        policeRequirements: 150,
+        callsign: "Bravo"
+    },
+    rank4 = {
+        name: "Police Sergeant II",
+        insignia: 5,
+        description: "A seasoned officer within the Police Department, the sergeant is tasked with leading patrols and micro-managing lower officers.",
+        playerRequirements: 75,
+        policeRequirements: 125,
+        callsign: "Charlie"
+    },
+    rank5 = {
+        name: "Police Sergeant",
+        insignia: 4,
+        description: "A seasoned officer within the Police Department, the sergeant is tasked with leading patrols and micro-managing lower officers.",
+        playerRequirements: 75,
+        policeRequirements: 100,
+        callsign: "Charlie"
+    },
+    rank6 = {
+        name: "Police Officer III",
+        insignia: 3,
+        description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
+        playerRequirements: 75,
+        policeRequirements: 75,
+        callsign: "Delta"
+    },
+    rank7 = {
+        name: "Police Officer II",
+        insignia: 2,
+        description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
+        playerRequirements: 50,
+        policeRequirements: 50,
+        callsign: "Delta"
+    },
+    rank8 = {
+        name: "Police Detective",
+        insignia: -1,
+        description: "The detective reserves a special role in the Police Department. They are permitted to conduct investigations as well as perform undercover duties. However, they must always reveal their badges to other officers or risk termination from their jobs.",
+        playerRequirements: 50,
+        policeRequirements: 75,
+        callsign: "Detective"
+    },
+    rank9 = {
+        name: "Pine County Deputy",
+        insignia: -1,
+        description: "The deputy operates in Pine County instead of Monoford County. However, they still are beholden to Monoford PD's chain of command and laws.",
+        playerRequirements: 30,
+        policeRequirements: 25,
+        callsign: "Yankee"
+    },
+    rank10 = {
+        name: "Police Officer",
+        insignia: 1,
+        description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
+        playerRequirements: 25,
+        policeRequirements: 10,
+        callsign: "Delta"
+    },
+    rank11 = {
+        name: "Police Tow Driver",
+        insignia: -1,
+        description: "Lowest rank in the Police Department. This rank is supposed to deal with parking violations via ticketing/towing the vehicles.",
+        playerRequirements: 23,
+        policeRequirements: 1,
+        callsign: "Delta"
+    },
+    rank12 = {
+        name: "S.W.A.T Commander",
+        insignia: 0,
+        description: "The Special Weapons and Tactics Commander is in charge of the heavily armed tactical branch of the Police Department. Alongside handling dangerous criminal situations, the S.W.A.T Commander is the equivalent to a lieutenant and as such, must coordinate with the Police Chief and his team in either negotiating with or eliminating any threat to the city.",
+        playerRequirements: 100,
+        policeRequirements: 125,
+        callsign: "S.W.A.T Commander"
+    },
+    rank13 = {
+        name: "S.W.A.T Sniper",
+        insignia: 0,
+        description: "The Special Weapons and Tactics Sniper is heavily armed with a .50 Caliber sniper rifle, that is sure to tear through any criminal, or disable any vehicle. They handle only the most dangerous of criminal situations. As a result of their tactical equipment and tactics, S.W.A.T team personnel are only to be on duty when a state of emergency is called, as not to appear militarized to the public.",
+        playerRequirements: 100,
+        policeRequirements: 100,
+        callsign: "S.W.A.T Sniper"
+    },
+    rank14 = {
+        name: "S.W.A.T Officer",
+        insignia: 0,
+        description: "The Special Weapons and Tactics Officers are the heavily armed tactical branch of the Police Department. They handle only the most dangerous of criminal situations. As a result of their tactical equipment and tactics, S.W.A.T team personnel are only to be on duty when a state of emergency is called, as not to appear militarized to the public.",
+        playerRequirements: 100,
+        policeRequirements: 75,
+        callsign: "S.W.A.T Officers"
     }
 ];
 var sentence = 0;
@@ -571,3 +700,11 @@ function miranda(value) {
         document.getElementById("miranda-main-container").style.visibility = "hidden";
     }
 }
+
+function loadRanks() {
+    for(i = 0; i < ranks.length; i++) {
+        console.log("working!");
+    }
+}
+
+loadRanks();
