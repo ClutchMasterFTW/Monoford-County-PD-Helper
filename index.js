@@ -274,6 +274,12 @@ var charges = [
         fine: 2000
     }
 ];
+var ranks = [
+    rank1 = {
+        name: "Police Chief",
+        insignia: 
+    }
+];
 var sentence = 0;
 var fine = 0;
 

@@ -336,6 +336,16 @@ a {
     padding-top: 1vw;
 }
 
+#miranda:hover {
+    color: black;
+    background-image: linear-gradient(white, gray);
+    border: black 1px solid;
+    box-shadow: 2px 2px 2px black;
+    transition: color ease-in-out 0.5s;
+    transition: border ease-in-out 0.5s;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
 #ranking {
     visibility: hidden;
 }
@@ -369,7 +379,7 @@ a {
 #chainofcommand-container {
     background-color: black;
     border: white 1px solid;
-    width: 55vw;
+    width: 78vw;
     height: 30vw;
     overflow-y: auto;
     overflow-x: hidden;
