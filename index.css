@@ -376,6 +376,15 @@ a {
     text-align: center;
 }
 
+#chainofcommand-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 9vw;
+    left: 20.5vw;
+}
+
 #chainofcommand-container {
     background-color: black;
     border: white 1px solid;
@@ -389,5 +398,65 @@ a {
 }
 
 #callsign-barrier {
-    
+    background-color: #1E1E1E;
+    width: 15vw;
+    height: 30.1vw;
+    position: absolute;
+    top: 12.5vw;
+    left: 65vw;
+    border-right: white 1px solid;
+    border-left: white 1px solid;
+}
+
+#callsign-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 9vw;
+    left: 80.5vw;
+}
+
+#coc-main-container {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+#close-coc {
+    position: relative;
+    float: right;
+    filter: invert(100%);
+    user-select: none;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#coc-container {
+    border: 1px solid white;
+    background-image: linear-gradient(#1E1E1E, black);
+    width: 50vw;
+    height: 20vw;
+    margin: 10vw auto;
+    box-shadow: 5px 5px 5px black;
+}
+
+#coc-title {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#coc-description {
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
 }

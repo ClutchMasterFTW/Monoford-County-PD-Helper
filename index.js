@@ -296,7 +296,7 @@ var charges = [
     }
 ];
 var ranks = [
-    rank1 = {
+    rank0 = {
         name: "Police Chief",
         insignia: 8,
         description: "The head of the Police Department. The chief has various powers and absolute authority over all members of his department. The primary duties of the chief include oversight of officers, training cadets, and upkeeping the law.",
@@ -304,7 +304,7 @@ var ranks = [
         policeRequirements: "Requires Whitelist",
         callsign: "Alpha"
     },
-    rank2 = {
+    rank1 = {
         name: "Police Assistant Chief",
         insignia: 7,
         description: "The Assistant Chief is the second-in-command at the department. He supervises its operation and personnel when the Chief is occupied or has chosen to delegate responsibilities.",
@@ -312,7 +312,7 @@ var ranks = [
         policeRequirements: 200,
         callsign: "Alpha"
     },
-    rank3 = {
+    rank2 = {
         name: "Police Lieutenant",
         insignia: 6,
         description: "The lieutenant is a high-ranking officer in the Police Department. During critical times, they are encouraged to step in as an acting chief, should the chief be incapacitated or unable to lead.",
@@ -320,7 +320,7 @@ var ranks = [
         policeRequirements: 150,
         callsign: "Bravo"
     },
-    rank4 = {
+    rank3 = {
         name: "Police Sergeant II",
         insignia: 5,
         description: "A seasoned officer within the Police Department, the sergeant is tasked with leading patrols and micro-managing lower officers.",
@@ -328,7 +328,7 @@ var ranks = [
         policeRequirements: 125,
         callsign: "Charlie"
     },
-    rank5 = {
+    rank4 = {
         name: "Police Sergeant",
         insignia: 4,
         description: "A seasoned officer within the Police Department, the sergeant is tasked with leading patrols and micro-managing lower officers.",
@@ -336,7 +336,7 @@ var ranks = [
         policeRequirements: 100,
         callsign: "Charlie"
     },
-    rank6 = {
+    rank5 = {
         name: "Police Officer III",
         insignia: 3,
         description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
@@ -344,7 +344,7 @@ var ranks = [
         policeRequirements: 75,
         callsign: "Delta"
     },
-    rank7 = {
+    rank6 = {
         name: "Police Officer II",
         insignia: 2,
         description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
@@ -352,7 +352,7 @@ var ranks = [
         policeRequirements: 50,
         callsign: "Delta"
     },
-    rank8 = {
+    rank7 = {
         name: "Police Detective",
         insignia: -1,
         description: "The detective reserves a special role in the Police Department. They are permitted to conduct investigations as well as perform undercover duties. However, they must always reveal their badges to other officers or risk termination from their jobs.",
@@ -360,7 +360,7 @@ var ranks = [
         policeRequirements: 75,
         callsign: "Detective"
     },
-    rank9 = {
+    rank8 = {
         name: "Pine County Deputy",
         insignia: -1,
         description: "The deputy operates in Pine County instead of Monoford County. However, they still are beholden to Monoford PD's chain of command and laws.",
@@ -368,7 +368,7 @@ var ranks = [
         policeRequirements: 25,
         callsign: "Yankee"
     },
-    rank10 = {
+    rank9 = {
         name: "Police Officer",
         insignia: 1,
         description: "The backbone of the Police Department. The officer goes on patrol, answers 911 calls, and resolves conflict. They are also encouraged to bring cadets on patrol with them.",
@@ -376,7 +376,7 @@ var ranks = [
         policeRequirements: 10,
         callsign: "Delta"
     },
-    rank11 = {
+    rank10 = {
         name: "Police Tow Driver",
         insignia: -1,
         description: "Lowest rank in the Police Department. This rank is supposed to deal with parking violations via ticketing/towing the vehicles.",
@@ -384,15 +384,15 @@ var ranks = [
         policeRequirements: 1,
         callsign: "Delta"
     },
-    rank12 = {
+    rank11 = {
         name: "S.W.A.T Commander",
         insignia: 0,
         description: "The Special Weapons and Tactics Commander is in charge of the heavily armed tactical branch of the Police Department. Alongside handling dangerous criminal situations, the S.W.A.T Commander is the equivalent to a lieutenant and as such, must coordinate with the Police Chief and his team in either negotiating with or eliminating any threat to the city.",
         playerRequirements: 100,
         policeRequirements: 125,
-        callsign: "S.W.A.T Commander"
+        callsign: "S.W.A.T Comm."
     },
-    rank13 = {
+    rank12 = {
         name: "S.W.A.T Sniper",
         insignia: 0,
         description: "The Special Weapons and Tactics Sniper is heavily armed with a .50 Caliber sniper rifle, that is sure to tear through any criminal, or disable any vehicle. They handle only the most dangerous of criminal situations. As a result of their tactical equipment and tactics, S.W.A.T team personnel are only to be on duty when a state of emergency is called, as not to appear militarized to the public.",
@@ -400,13 +400,13 @@ var ranks = [
         policeRequirements: 100,
         callsign: "S.W.A.T Sniper"
     },
-    rank14 = {
+    rank13 = {
         name: "S.W.A.T Officer",
         insignia: 0,
         description: "The Special Weapons and Tactics Officers are the heavily armed tactical branch of the Police Department. They handle only the most dangerous of criminal situations. As a result of their tactical equipment and tactics, S.W.A.T team personnel are only to be on duty when a state of emergency is called, as not to appear militarized to the public.",
         playerRequirements: 100,
         policeRequirements: 75,
-        callsign: "S.W.A.T Officers"
+        callsign: "S.W.A.T Officer"
     }
 ];
 var sentence = 0;
@@ -457,8 +457,6 @@ function loadCharges() {
         chargeAmount.style.left = "28vw";
         chargeAmount.style.textAlign = "center";
         chargeAmount.style.lineHeight = "100px";
-        //chargeAmount.style.padding = "0px";
-        //chargeAmount.style.display = "inline";
 
         var chargeAdd = document.createElement("div");
         chargeAdd.id = "chargeAdd" + i;
@@ -703,8 +701,134 @@ function miranda(value) {
 
 function loadRanks() {
     for(i = 0; i < ranks.length; i++) {
-        console.log("working!");
+        var rankContainer = document.createElement("div");
+        rankContainer.id = "rank-container" + i;
+        rankContainer.style.border = "white solid 1px";
+        rankContainer.style.backgroundImage = "linear-gradient(#1E1E1E, black)";
+        rankContainer.style.cursor = "pointer";
+
+        var rank = document.createElement("div");
+        rank.id = "rank" + i;
+        rank.innerHTML = ranks[i].name;
+        rank.style.color = "white";
+        rank.style.padding = "10px 14px";
+        rank.style.fontSize = "25px";
+
+        var rankInsigniaContainer = document.createElement("div");
+        rankInsigniaContainer.id = "rank-insignia-container" + i;
+        rankInsigniaContainer.innerHTML = "Insignia:";
+        rankInsigniaContainer.style.color = "#ffba26";
+        rankInsigniaContainer.style.fontSize = "20px";
+        rankInsigniaContainer.style.fontWeight = "600";
+        rankInsigniaContainer.style.width = "15vw";
+        rankInsigniaContainer.style.height = "2vw";
+        rankInsigniaContainer.style.paddingLeft = "14px";
+
+        if(ranks[i].insignia != -1) {
+            var rankInsigniaImg = document.createElement("img");
+            rankInsigniaImg.id = "rank-insignia-img" + i;
+            rankInsigniaImg.setAttribute("src", "images/insignias/" + ranks[i].insignia + ".png");
+            if(ranks[i].insignia == 1) {
+                rankInsigniaImg.style.width = "2vw";
+            } else if(ranks[i].insignia == 2) {
+                rankInsigniaImg.style.width = "1.75vw";
+            } else if(ranks[i].insignia == 3) {
+                rankInsigniaImg.style.width = "1.5vw";
+            } else if(ranks[i].insignia == 4) {
+                rankInsigniaImg.style.width = "1.25vw";
+            } else if(ranks[i].insignia == 5) {
+                rankInsigniaImg.style.width = "1.15vw";
+            } else if(ranks[i].insignia == 6) {
+                rankInsigniaImg.style.width = "0.85vw";
+            } else if(ranks[i].insignia == 7) {
+                rankInsigniaImg.style.width = "2vw";
+            } else if(ranks[i].insignia == 8) {
+                rankInsigniaImg.style.width = "3.75vw";
+            } else if(ranks[i].insignia == 0) {
+                rankInsigniaImg.style.width = "3vw";
+            }
+            rankInsigniaImg.style.display = "flex";
+            rankInsigniaImg.style.justifyContent = "center";
+            rankInsigniaImg.style.alignItems = "center";
+
+            rankInsigniaContainer.appendChild(rankInsigniaImg);
+        } else if(ranks[i].insignia == -1) {
+            var rankNoInsignia = document.createElement("div");
+            rankNoInsignia.id = "rank-no-insignia" + i;
+            rankNoInsignia.innerHTML = "Rank has no Insignia!";
+            rankNoInsignia.style.color = "salmon";
+
+            rankInsigniaContainer.appendChild(rankNoInsignia);
+        }
+
+        var rankCallSign = document.createElement("div");
+        rankCallSign.id = "rank-call-sign" + i;
+        rankCallSign.innerHTML = ranks[i].callsign;
+        rankCallSign.style.color = "white";
+        rankCallSign.style.fontSize = "2vw";
+        rankCallSign.style.fontWeight = "bold";
+        rankCallSign.style.position = "relative";
+        rankCallSign.style.top = "-2.75vw";
+        rankCallSign.style.left = "61vw";
+
+        var chainOfCommandContainer = document.getElementById("chainofcommand-container");
+        chainOfCommandContainer.appendChild(rankContainer);
+        rankContainer.appendChild(rank);
+        rankContainer.appendChild(rankInsigniaContainer);
+        rankContainer.appendChild(rankCallSign);
+
+        rankContainer.setAttribute("onclick", "openRank(" + i + ")");
     }
 }
 
 loadRanks();
+
+function openRank(rank) {
+    if(rank == "close") {
+        document.getElementById("coc-main-container").style.visibility = "hidden";
+        var item1 = document.getElementById("player-level-title");
+        var item2 = document.getElementById("player-level-container");
+        item1.remove();
+        item2.remove();
+    } else if(rank != "close") {
+        document.getElementById("coc-main-container").style.visibility = "visible";
+        document.getElementById("coc-title").innerHTML = ranks[rank].name;
+        document.getElementById("coc-description").innerHTML = ranks[rank].description;
+
+        var playerLevelTitle = document.createElement("div");
+        playerLevelTitle.id = "player-level-title";
+        playerLevelTitle.innerHTML = "Player Level Required:";
+        playerLevelTitle.style.fontSize = "1vw";
+        playerLevelTitle.style.fontWeight = "600";
+        playerLevelTitle.style.color = "salmon";
+        playerLevelTitle.style.marginTop = "1vw";
+        playerLevelTitle.style.textAlign = "center";
+
+        var playerLevelContainer = document.createElement("div");
+        playerLevelContainer.id = "player-level-container";
+        playerLevelContainer.style.width = "15vw";
+        playerLevelContainer.style.height = "1.25vw";
+        playerLevelContainer.style.backgroundColor = "white";
+        playerLevelContainer.style.display = "flex";
+        playerLevelContainer.style.justifyContent = "center";
+        playerLevelContainer.style.alignItems = "center";
+        playerLevelContainer.style.marginTop = "0.25vw";
+        playerLevelContainer.style.position = "absolute";
+        playerLevelContainer.style.border = "white 1px solid";
+
+        var playerLevel = document.createElement("div");
+        playerLevel.id = "player-level-container";
+        var width = ranks[rank].playerRequirements * 0.15;
+        playerLevel.style.width = width + "vw";
+        playerLevel.style.height = "1.25vw";
+        playerLevel.style.backgroundColor = "lime";
+        playerLevel.style.position = "absolute";
+        playerLevel.style.top = "0vw";
+        playerLevel.style.left = "0vw";
+
+        var rankInfoContainer = document.getElementById("coc-container");
+        rankInfoContainer.appendChild(playerLevelTitle);
+        rankInfoContainer.appendChild(playerLevelContainer);
+        playerLevelContainer.appendChild(playerLevel);
+    }
+}
