@@ -950,3 +950,9 @@ function openRank(rank) {
         }
     }
 }
+
+function loadTenCodes() {
+
+}
+
+loadTenCodes();
