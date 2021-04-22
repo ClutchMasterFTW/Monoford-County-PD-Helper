@@ -1,296 +1,324 @@
 //Variables
 var charges = [
     charge0 = {
-        name: "Capital Felony",
-        class: "Capital Felony",
-        sentence: 200,
-        amount: 0,
-        fine: 1000000
-    },
-    charge1 = {
         name: "Murder",
         class: "Felony",
         sentence: 20,
         amount: 0,
         fine: 1000000
     },
-    charge2 = {
+    charge1 = {
         name: "Murder of a Law Enforcement Officer (LEO)",
-        class: "Felony",
+        class: "Capital Felony",
         sentence: 30,
         amount: 0,
         fine: 1000000
     },
-    charge3 = {
+    charge2 = {
         name: "Possession of illegal substances",
         class: "Felony",
         sentence: 5,
         amount: 0,
         fine: 2500
     },
-    charge4 = {
+    charge3 = {
         name: "Distribution of illegal substances",
         class: "Felony",
         sentence: 10,
         amount: 0,
         fine: 1000000
     },
-    charge5 = {
+    charge4 = {
         name: "Hostage Taking (without deadly weapon)",
         class: "Felony",
         sentence: 10,
         amount: 0,
         fine: 1000000
     },
-    charge6 = {
+    charge5 = {
         name: "Hostage Taking (with a deadly weapon)",
         class: "Felony",
         sentence: 25,
         amount: 0,
         fine: 1000000
     },
-    charge7 = {
+    charge6 = {
         name: "Home Invasion/Breaking and Entering",
         class: "Felony",
         sentence: 15,
         amount: 0,
         fine: 1000000
     },
-    charge8 = {
+    charge7 = {
         name: "Involentary Manslaughter",
         class: "Felony",
         sentence: 7.5,
         amount: 0,
         fine: 5000
     },
-    charge9 = {
+    charge8 = {
         name: "Assault",
         class: "Felony",
         sentence: 5,
         amount: 0,
-        fine: 4500
+        fine: 3500
     },
-    charge10 = {
+    charge9 = {
         name: "Assaulting a Law Enforcement Officer (LEO)",
         class: "Felony",
         sentence: 6.5,
         amount: 0,
-        fine: 4750
+        fine: 4000
     },
-    charge11 = {
+    charge10 = {
         name: "Involentary Vehicular Manslauter",
         class: "Felony",
         sentence: 5,
         amount: 0,
         fine: 3000
     },
-    charge12 = {
+    charge11 = {
         name: "Vehicular Manslauter",
         class: "Felony",
         sentence: 10,
         amount: 0,
         fine: 1000000
     },
-    charge13 = {
+    charge12 = {
         name: "Bank Robbery",
         class: "Felony",
-        sentence: 60,
+        sentence: 40,
+        amount: 0,
+        fine: 1000000
+    },
+    charge13 = {
+        name: "Gas Station Robbery",
+        class: "Felony",
+        sentence: 35,
         amount: 0,
         fine: 1000000
     },
     charge14 = {
-        name: "Gas Station Robbery",
-        class: "Felony",
-        sentence: 55,
-        amount: 0,
-        fine: 1000000
-    },
-    charge15 = {
         name: "Distributing illegal firearms",
         class: "Felony",
         sentence: 15,
         amount: 0,
         fine: 1000000
     },
-    charge16 = {
+    charge15 = {
         name: "Terrorism",
-        class: "Felony",
-        sentence: 60,
+        class: "Capital Felony",
+        sentence: 200,
         amount: 0,
         fine: 1000000
     },
-    charge17 = {
+    charge16 = {
         name: "Verbal threats towards a Citizen",
         class: "Misdeminor",
-        sentence: 1,
+        sentence: 0,
         amount: 0,
-        fine: 650
+        fine: 350
     },
-    charge18 = {
+    charge17 = {
         name: "Verbal threats towards an LEO",
         class: "Misdeminor",
         sentence: 1,
         amount: 0,
-        fine: 750
+        fine: 500
     },
-    charge19 = {
+    charge18 = {
         name: "Fleeing and Eluding",
         class: "Felony",
         sentence: 12.5,
         amount: 0,
         fine: 1000000
     },
-    charge20 = {
+    charge19 = {
         name: "Possession of an illegal firearm",
         class: "Felony",
         sentence: 12.5,
         amount: 0,
         fine: 5000
     },
-    charge21 = {
+    charge20 = {
         name: "Driving Under the Influence (DUI)",
         class: "Misdeminor",
         sentence: 3.5,
         amount: 0,
         fine: 2500
     },
-    charge22 = {
+    charge21 = {
         name: "Corruption",
         class: "Felony",
         sentence: 30,
         amount: 0,
         fine: 1000000
     },
-    charge23 = {
+    charge22 = {
         name: "Mugging",
         class: "Felony",
         sentence: 12.5,
         amount: 0,
         fine: 1000000
     },
-    charge24 = {
+    charge23 = {
         name: "Grand Theft Auto",
         class: "Felony",
         sentence: 7.5,
         amount: 0,
         fine: 1000000
     },
-    charge25 = {
+    charge24 = {
         name: "Grand Theft Auto (of a government vehicle)",
         class: "Felony",
         sentence: 11.5,
         amount: 0,
         fine: 1000000
     },
-    charge26 = {
+    charge25 = {
         name: "Reckless Driving",
         class: "Misdeminor",
         sentence: 3,
         amount: 0,
         fine: 1250
     },
-    charge27 = {
+    charge26 = {
         name: "Unlawful Harrassment",
         class: "Misdeminor",
         sentence: 0,
         amount: 0,
-        fine: 1000
+        fine: 800
     },
-    charge28 = {
+    charge27 = {
         name: "Obstruction of Justice",
         class: "Misdeminor",
         sentence: 5,
         amount: 0,
         fine: 2750
     },
-    charge29 = {
+    charge28 = {
         name: "Resisting Arrest",
         class: "Misdeminor",
         sentence: 2,
         amount: 0,
         fine: 1500
     },
-    charge30 = {
+    charge29 = {
         name: "Public Indecency",
         class: "Misdeminor",
         sentence: 1,
         amount: 0,
         fine: 1500
     },
-    charge31 = {
+    charge30 = {
         name: "Driving with an expired license",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 550
     },
-    charge32 = {
+    charge31 = {
         name: "Driving 5 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 50
     },
-    charge33 = {
+    charge32 = {
         name: "Driving 10 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 150
     },
-    charge34 = {
+    charge33 = {
         name: "Driving 15 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 300
     },
-    charge35 = {
+    charge34 = {
         name: "Driving 20 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 550
     },
-    charge36 = {
+    charge35 = {
         name: "Driving 25 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 750
     },
-    charge37 = {
+    charge36 = {
         name: "Driving 30 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 1000
     },
-    charge38 = {
+    charge37 = {
         name: "Driving 40+ mph over the speed limit",
         class: "Misdeminor",
         sentence: 1.5,
         amount: 0,
         fine: 2000
     },
-    charge39 = {
+    charge38 = {
         name: "Parked Illegally",
         class: "Infraction",
         sentence: 0,
         amount: 0,
         fine: 350
     },
-    charge40 = {
+    charge39 = {
         name: "Attempted Murder",
         class: "Felony",
         sentence: 12.5,
         amount: 0,
         fine: 1000000
     },
-    charge41 = {
+    charge40 = {
         name: "Attempted Murder of an LEO",
         class: "Felony",
         sentence: 15,
+        amount: 0,
+        fine: 1000000
+    },
+    charge41 = {
+        name: "Tinted Windows",
+        class: "Infraction",
+        sentence: 0,
+        amount: 0,
+        fine: 750
+    },
+    charge42 = {
+        name: "Prison Break",
+        class: "Capital Felony",
+        sentence: 60,
+        amount: 0,
+        fine: 1000000
+    },
+    charge43 = {
+        name: "Murder of a Department Of Corrections Staff",
+        class: "Capital Felony",
+        sentence: 30,
+        amount: 0,
+        fine: 1000000
+    },
+    charge44 = {
+        name: "Assassination of the Mayor",
+        class: "Capital Felony",
+        sentence: 200,
+        amount: 0,
+        fine: 1000000
+    },
+    charge45 = {
+        name: "Arson",
+        class: "Felony",
+        sentence: 20,
         amount: 0,
         fine: 1000000
     }
@@ -581,6 +609,7 @@ function addSentence(param) {
 
 function removeSentence(param) {
     var sliced = param.slice(12);
+    //FIX THIS SECTION
     if (charges[sliced].fine < 1000000 && charges[sliced].amount > 0) {
         fine -= charges[sliced].fine;
         document.getElementById("fine").innerHTML = "$" + fine;
@@ -603,6 +632,7 @@ function removeSentence(param) {
             document.getElementById("fine").style.color = "darkred";
         }
     }
+    //
     if (sentence != 0 && charges[sliced].amount != 0) {
         sentence -= charges[sliced].sentence;
         charges[sliced].amount--;
@@ -755,7 +785,7 @@ function loadRanks() {
         } else if(ranks[i].insignia == -1) {
             var rankNoInsignia = document.createElement("div");
             rankNoInsignia.id = "rank-no-insignia" + i;
-            rankNoInsignia.innerHTML = "Rank has no Insignia!";
+            rankNoInsignia.innerHTML = "None!";
             rankNoInsignia.style.color = "salmon";
 
             rankInsigniaContainer.appendChild(rankNoInsignia);
@@ -788,8 +818,12 @@ function openRank(rank) {
         document.getElementById("coc-main-container").style.visibility = "hidden";
         var item1 = document.getElementById("player-level-title");
         var item2 = document.getElementById("player-level-container");
+        var item3 = document.getElementById("police-level-title");
+        var item4 = document.getElementById("police-level-container");
         item1.remove();
         item2.remove();
+        item3.remove();
+        item4.remove();
     } else if(rank != "close") {
         document.getElementById("coc-main-container").style.visibility = "visible";
         document.getElementById("coc-title").innerHTML = ranks[rank].name;
@@ -815,20 +849,104 @@ function openRank(rank) {
         playerLevelContainer.style.marginTop = "0.25vw";
         playerLevelContainer.style.position = "absolute";
         playerLevelContainer.style.border = "white 1px solid";
+        playerLevelContainer.style.marginLeft = "17.5vw";
 
         var playerLevel = document.createElement("div");
-        playerLevel.id = "player-level-container";
-        var width = ranks[rank].playerRequirements * 0.15;
+        playerLevel.id = "player-level";
+        if(ranks[rank].playerRequirements == "Requires Whitelist") {
+            var width = 15;
+            playerLevel.style.backgroundColor = "red";
+        } else {
+            var width = ranks[rank].playerRequirements * 0.15;
+            playerLevel.style.backgroundColor = "lime";
+        }
         playerLevel.style.width = width + "vw";
         playerLevel.style.height = "1.25vw";
-        playerLevel.style.backgroundColor = "lime";
         playerLevel.style.position = "absolute";
         playerLevel.style.top = "0vw";
         playerLevel.style.left = "0vw";
+
+        var playerLevelValue = document.createElement("div");
+        playerLevelValue.id = "player-level-value";
+        if(ranks[rank].playerRequirements == "Requires Whitelist") {
+            playerLevelValue.innerHTML = ranks[rank].playerRequirements;
+        } else {
+            playerLevelValue.innerHTML = "Level " + ranks[rank].playerRequirements;
+        }
+        playerLevelValue.style.color = "black";
+        playerLevelValue.style.textAlign = "center";
+        playerLevelValue.style.fontWeight = "600";
+        playerLevelValue.style.fontSize = "1vw";
+        playerLevelValue.style.zIndex = "5";
+
+        //////////////////
+        ///Police level///
+        //////////////////
+
+        var policeLevelTitle = document.createElement("div");
+        policeLevelTitle.id = "police-level-title";
+        policeLevelTitle.innerHTML = "Police Level Required:";
+        policeLevelTitle.style.fontSize = "1vw";
+        policeLevelTitle.style.fontWeight = "600";
+        policeLevelTitle.style.color = "salmon";
+        policeLevelTitle.style.marginTop = "2vw";
+        policeLevelTitle.style.textAlign = "center";
+
+        var policeLevelContainer = document.createElement("div");
+        policeLevelContainer.id = "police-level-container";
+        policeLevelContainer.style.width = "15vw";
+        policeLevelContainer.style.height = "1.25vw";
+        policeLevelContainer.style.backgroundColor = "white";
+        policeLevelContainer.style.display = "flex";
+        policeLevelContainer.style.justifyContent = "center";
+        policeLevelContainer.style.alignItems = "center";
+        policeLevelContainer.style.marginTop = "0.25vw";
+        policeLevelContainer.style.position = "absolute";
+        policeLevelContainer.style.border = "white 1px solid";
+        policeLevelContainer.style.marginLeft = "17.5vw";
+
+        var policeLevel = document.createElement("div");
+        policeLevel.id = "player-level";
+        if(ranks[rank].policeRequirements == "Requires Whitelist") {
+            var width = 15;
+            policeLevel.style.backgroundColor = "red";
+        } else {
+            var width = ranks[rank].policeRequirements * 0.075;
+            policeLevel.style.backgroundColor = "lime";
+        }
+        policeLevel.style.width = width + "vw";
+        policeLevel.style.height = "1.25vw";
+        policeLevel.style.position = "absolute";
+        policeLevel.style.top = "0vw";
+        policeLevel.style.left = "0vw";
+
+        var policeLevelValue = document.createElement("div");
+        policeLevelValue.id = "police-level-value";
+        if(ranks[rank].policeRequirements == "Requires Whitelist") {
+            policeLevelValue.innerHTML = ranks[rank].policeRequirements;
+        } else {
+            policeLevelValue.innerHTML = "Level " + ranks[rank].policeRequirements;
+        }
+        policeLevelValue.style.color = "black";
+        policeLevelValue.style.textAlign = "center";
+        policeLevelValue.style.fontWeight = "600";
+        policeLevelValue.style.fontSize = "1vw";
+        policeLevelValue.style.zIndex = "5";
 
         var rankInfoContainer = document.getElementById("coc-container");
         rankInfoContainer.appendChild(playerLevelTitle);
         rankInfoContainer.appendChild(playerLevelContainer);
         playerLevelContainer.appendChild(playerLevel);
+        playerLevelContainer.appendChild(playerLevelValue);
+        rankInfoContainer.appendChild(policeLevelTitle);
+        rankInfoContainer.appendChild(policeLevelContainer);
+        policeLevelContainer.appendChild(policeLevel);
+        policeLevelContainer.appendChild(policeLevelValue);
+
+        if(rank == 11 || rank == 12 || rank == 13) {
+            document.getElementById("coc-description").style.fontSize = "1vw";
+        } else {
+            document.getElementById("coc-description").style.fontSize = "1.5vw";
+        }
     }
 }
