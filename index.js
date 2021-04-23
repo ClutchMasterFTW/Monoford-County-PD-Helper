@@ -446,13 +446,14 @@ function loadCharges() {
         chargeContainer.id = "charge-container" + i;
         chargeContainer.style.border = "white solid 1px";
         chargeContainer.style.backgroundImage = "linear-gradient(#1E1E1E, black)";
+        chargeContainer.style.height = "5vw";
 
         var charge = document.createElement("div");
         charge.id = "charge" + i;
         charge.innerHTML = charges[i].name;
         charge.style.color = "white";
-        charge.style.padding = "10px 14px";
-        charge.style.fontSize = "25px";
+        charge.style.padding = "0.5vw 0.75vw";
+        charge.style.fontSize = "1.25vw";
 
         var level = document.createElement("div");
         level.id = "level" + i;
@@ -467,64 +468,65 @@ function loadCharges() {
             level.style.color = "yellow";
         }
         level.style.fontWeight = "bold";
-        level.style.paddingLeft = "14px";
-        level.style.paddingBottom = "10px";
-        level.style.marginTop = "-10px";
+        level.style.paddingLeft = "0.75vw";
+        level.style.paddingBottom = "0.5vw";
+        level.style.marginTop = "-0.5vw";
+        level.style.fontSize = "0.8vw";
 
         var chargeAmount = document.createElement("div");
         chargeAmount.id = "chargeAmount" + i;
         chargeAmount.innerHTML = charges[i].amount;
         chargeAmount.style.color = "white";
-        chargeAmount.style.fontSize = "50px";
+        chargeAmount.style.fontSize = "2.5vw";
         chargeAmount.style.borderRight = "1px solid white";
         chargeAmount.style.borderLeft = "1px solid white";
-        chargeAmount.style.width = "75px";
-        chargeAmount.style.height = "100px";
+        chargeAmount.style.width = "4vw";
+        chargeAmount.style.height = "5vw";
         chargeAmount.style.position = "relative";
         chargeAmount.style.marginTop = "-4vw";
         chargeAmount.style.left = "28vw";
         chargeAmount.style.textAlign = "center";
-        chargeAmount.style.lineHeight = "100px";
+        chargeAmount.style.lineHeight = "5vw";
 
         var chargeAdd = document.createElement("div");
         chargeAdd.id = "chargeAdd" + i;
         chargeAdd.style.color = "white";
-        chargeAdd.style.fontSize = "50px";
+        chargeAdd.style.fontSize = "2.5vw";
         chargeAdd.style.borderRight = "1px solid white";
-        chargeAdd.style.width = "75px";
-        chargeAdd.style.height = "100px";
+        chargeAdd.style.width = "3.75vw";
+        chargeAdd.style.height = "5vw";
         chargeAdd.style.position = "relative";
-        chargeAdd.style.marginTop = "-5.25vw";
+        chargeAdd.style.marginTop = "-4.75vw";
         chargeAdd.style.left = "32vw";
         chargeAdd.style.textAlign = "center";
-        chargeAdd.style.lineHeight = "100px";
+        chargeAdd.style.lineHeight = "5vw";
         chargeAdd.style.cursor = "pointer";
         chargeAdd.setAttribute("onclick", "addSentence(this.id)");
         var chargeAddImg = document.createElement("img");
         chargeAddImg.id = "chargeAddImg" + i;
         chargeAddImg.setAttribute("src", "images/plus.png");
-        chargeAddImg.style.width = "40px";
+        chargeAddImg.style.width = "2vw";
         chargeAddImg.style.filter = "invert(100%)";
         chargeAddImg.style.userSelect = "none";
 
         var chargeRemove = document.createElement("div");
         chargeRemove.id = "chargeRemove" + i;
         chargeRemove.style.color = "white";
-        chargeRemove.style.fontSize = "50px";
+        chargeRemove.style.fontSize = "2.5vw";
         chargeRemove.style.borderRight = "1px solid white";
-        chargeRemove.style.width = "75px";
-        chargeRemove.style.height = "100px";
+        chargeRemove.style.width = "3.9vw";
+        chargeRemove.style.height = "5vw";
         chargeRemove.style.position = "relative";
-        chargeRemove.style.marginTop = "-5.25vw";
+        chargeRemove.style.marginTop = "-5vw";
         chargeRemove.style.left = "36vw";
         chargeRemove.style.textAlign = "center";
-        chargeRemove.style.lineHeight = "100px";
+        chargeRemove.style.lineHeight = "5vw";
         chargeRemove.style.cursor = "pointer";
         chargeRemove.setAttribute("onclick", "removeSentence(this.id)");
         var chargeRemoveImg = document.createElement("img");
         chargeRemoveImg.id = "chargeRemoveImg" + i;
         chargeRemoveImg.setAttribute("src", "images/minus.png");
-        chargeRemoveImg.style.width = "40px";
+        chargeRemoveImg.style.width = "2vw";
         chargeRemoveImg.style.filter = "invert(100%)";
         chargeRemoveImg.style.userSelect = "none";
 
@@ -605,6 +607,9 @@ function addSentence(param) {
         document.getElementById("fine").style.fontSize = "100px";
         document.getElementById("fine").style.color = "darkred";
     }
+    if(fine < 0) {
+        fine = 0;
+    }
 }
 
 function removeSentence(param) {
@@ -627,9 +632,9 @@ function removeSentence(param) {
         }
     } else {
         if(charges[sliced].amount > 0) {
-            document.getElementById("fine").innerHTML = "Not Ticketable";
-            document.getElementById("fine").style.fontSize = "100px";
-            document.getElementById("fine").style.color = "darkred";
+            document.getElementById("fine").innerHTML = "$0";
+            document.getElementById("fine").style.fontSize = "150px";
+            document.getElementById("fine").style.color = "#54ff00";
         }
     }
     //
@@ -674,6 +679,9 @@ function removeSentence(param) {
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "#54ff00";
         document.getElementById("sentence-container").style.width = "35vw";
+    }
+    if(fine < 0) {
+        fine = 0;
     }
 }
 
@@ -956,3 +964,35 @@ function loadTenCodes() {
 }
 
 loadTenCodes();
+
+//If width of page is less than 1000, run function:
+setInterval(function(){
+    var pageWidth = document.body.clientWidth;
+    var pageHeight = document.body.clientHeight;
+    if(pageWidth < 1200 || pageHeight < 1000) {
+        checkDims();
+    }
+}, 10);
+
+var dimsAlert = 0;
+function checkDims() {
+    if(dimsAlert == 0) {
+        interval = setInterval(fadeIn, 10);
+        dimsAlert = 1;
+    }
+}
+
+var opacity = 0;
+function fadeIn() {
+    if(opacity <= 75) {
+        document.getElementById("dim-warning-container").style.visibility = "visible";
+        document.getElementById("dim-warning-container").style.opacity = opacity + "%";
+        opacity++;
+    } else {
+        clearInterval(inteval);
+    }
+}
+
+function closeWarning() {
+    document.getElementById("dim-warning-container").style.visibility = "hidden";
+}

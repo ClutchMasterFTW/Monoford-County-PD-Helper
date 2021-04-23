@@ -111,47 +111,47 @@ a {
 #charges-title {
     color: white;
     font-weight: bold;
-    font-size: 60px;
-    padding-bottom: 10px;
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
     position: relative;
-    left: 200px;
+    left: 10vw;
 }
 
 #count {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     padding-bottom: 1vw;
     position: relative;
-    top: 45px;
-    left: 510px;
+    top: 2.3vw;
+    left: 27.1vw;
 }
 
 #add {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     padding-bottom: 1vw;
     position: relative;
-    top: 45px;
-    left: 535px;
+    top: 2.3vw;
+    left: 28.75vw;
 }
 
 #remove {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     padding-bottom: 1vw;
     position: relative;
-    top: 45px;
-    left: 560px;
+    top: 2.3vw;
+    left: 30vw;
 }
 
 #charges-container {
     background-color: black;
     border: white 1px solid;
-    width: 775px;
-    margin-left: 190px;
+    width: 40.5vw;
+    margin-left: 10vw;
     height: 35vw;
     overflow-y: auto;
     overflow-x: hidden;
@@ -159,7 +159,7 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.5vw;
 }
 
 /* Track */
@@ -192,7 +192,7 @@ a {
 #divider {
     background-color: white;
     width: 35vw;
-    height: 3px;
+    height: 0.15vw;
     position: relative;
     left: 60vw;
     top: -23vw;
@@ -201,7 +201,7 @@ a {
 #sentence-title {
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.5vw;
     position: relative;
     top: -36vw;
     left: 60vw;
@@ -217,7 +217,7 @@ a {
 }
 
 #sentence {
-    font-size: 150px;
+    font-size: 7.75vw;
     font-weight: 600;
     position: relative;
     top: -1vw;
@@ -227,7 +227,7 @@ a {
 }
 
 #sentence-units {
-    font-size: 35px;
+    font-size: 1.85vw;
     display: inline;
     position: relative;
     top: -1.25vw;
@@ -236,14 +236,14 @@ a {
 #fine-title {
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.5vw;
     position: relative;
     top: -35vw;
     left: 60vw;
 }
 
 #fine {
-    font-size: 150px;
+    font-size: 7.5vw;
     font-weight: 600;
     position: relative;
     top: -35.5vw;
@@ -270,15 +270,15 @@ a {
 #miranda {
     color: white;
     background-image: linear-gradient(#1E1E1E, black);
-    width: 8vw;
-    height: 1.5vw;
+    width: 160px;
+    height: 30px;
     border: 1px solid white;
     position: absolute;
     bottom: 30px;
     right: 30px;
     text-align: center;
-    line-height: 1.5vw;
-    font-size: 1vw;
+    line-height: 30px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -536,4 +536,70 @@ a {
     left: 73vw;
     width: 25vw;
     height: 15vw;
+}
+
+#dim-warning-container {
+    background-image: linear-gradient(160deg,salmon, red);
+    opacity: 80%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#dim-warning-icon {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    width: 100%;
+    user-select: none;
+    margin-top: 5%;
+}
+
+#dim-warning-title {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1%;
+}
+
+#dim-warning-text {
+    color: white;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#proceed {
+    border: white solid 5px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#proceed:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#tencodes-title {
+    color: white;
+    position: absolute;
+    top: 6vw;
+    left: 12vw;
+    font-size: 3vw;
+    font-weight: bold;
 }
