@@ -598,8 +598,55 @@ a {
 #tencodes-title {
     color: white;
     position: absolute;
-    top: 6vw;
-    left: 12vw;
+    top: 8vw;
+    left: 10.5vw;
     font-size: 3vw;
     font-weight: bold;
+}
+
+#tencodes-container {
+    background-color: black;
+    border: white 1px solid;
+    width: 35vw;
+    margin-left: 10vw;
+    height: 32vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 12vw;
+}
+
+#codes-title {
+    color: white;
+    position: absolute;
+    top: 8vw;
+    left: 57vw;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#codes-container {
+    background-color: black;
+    border: white 1px solid;
+    width: 27.5vw;
+    margin-left: 56.5vw;
+    height: 32vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 12vw;
+}
+
+#other-codes {
+    color: white;
+    position: absolute;
+    bottom: 2vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+#color {
+    color: cyan;
 }

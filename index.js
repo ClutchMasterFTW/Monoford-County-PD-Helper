@@ -451,6 +451,82 @@ var ranks = [
         callsign: "S.W.A.T Officer"
     }
 ];
+var tenCodesList = [
+    code0 = {
+        name: "10-4",
+        meaning: "Acknowledgement (OK)"
+    },
+    code1 = {
+        name: "10-7",
+        meaning: "Out of Service"
+    },
+    code2 = {
+        name: "10-8",
+        meaning: "In Service"
+    },
+    code3 = {
+        name: "10-20",
+        meaning: "Location"
+    },
+    code4 = {
+        name: "10-23",
+        meaning: "Arrived at Scene"
+    },
+    code5 = {
+        name: "10-32",
+        meaning: "Person(s) with weapon"
+    },
+    code6 = {
+        name: "10-43",
+        meaning: "More information needed"
+    },
+    code7 = {
+        name: "10-50",
+        meaning: "Accident (Vehicle Collision/Crash)"
+    },
+    code8 = {
+        name: "10-77",
+        meaning: "ETA (Estimated Time of Arrival)"
+    },
+    code9 = {
+        name: "10-78",
+        meaning: "Assistance Needed"
+    },
+    code10 = {
+        name: "10-80",
+        meaning: "Chase in Progress"
+    },
+    code11 = {
+        name: "10-98",
+        meaning: "Prison/Jail Break"
+    },
+    code12 = {
+        name: "10-99",
+        meaning: "Wanted Individual Found"
+    }
+];
+var statusCodes = [
+    statusCode0 = {
+        name: "Code 1",
+        description: "Respond without ELS or Sirens (NON-URGENT)"
+    },
+    statusCode1 = {
+        name: "Code 2",
+        description: "Respond with ELS ON and no Sirens (URGENT)"
+    },
+    statusCode2 = {
+        name: "Code 3",
+        description: "Respond with ELS ON and Sirens (URGENT/EMERGENCY)"
+    },
+    statusCode3 = {
+        name: "Code 4",
+        description: "Situation is dealt with, return to 10-7 / 10-8"
+    },
+    statusCode4 = {
+        name: "Code RED",
+        description: "Situation where highest use of force is Authorized (Proceed with Caution)"
+    }
+];
 var sentence = 0;
 var fine = 0;
 
@@ -763,18 +839,18 @@ function loadRanks() {
         rank.id = "rank" + i;
         rank.innerHTML = ranks[i].name;
         rank.style.color = "white";
-        rank.style.padding = "10px 14px";
-        rank.style.fontSize = "25px";
+        rank.style.padding = "0.5vw 0.75vw";
+        rank.style.fontSize = "1.25vw";
 
         var rankInsigniaContainer = document.createElement("div");
         rankInsigniaContainer.id = "rank-insignia-container" + i;
         rankInsigniaContainer.innerHTML = "Insignia:";
         rankInsigniaContainer.style.color = "#ffba26";
-        rankInsigniaContainer.style.fontSize = "20px";
+        rankInsigniaContainer.style.fontSize = "1vw";
         rankInsigniaContainer.style.fontWeight = "600";
         rankInsigniaContainer.style.width = "15vw";
         rankInsigniaContainer.style.height = "2vw";
-        rankInsigniaContainer.style.paddingLeft = "14px";
+        rankInsigniaContainer.style.paddingLeft = "0.75vw";
 
         if(ranks[i].insignia != -1) {
             var rankInsigniaImg = document.createElement("img");
@@ -970,14 +1046,21 @@ function openRank(rank) {
         } else {
             document.getElementById("coc-description").style.fontSize = "1.5vw";
         }
+
+        //////////////
+        //SUPERVISOR//
+        //////////////
+        
+        /*if(rank == 0 || rank == 1 || rank == 2) {
+            var supervisor = document.createElement("div");
+            supervisor.id = "supervisor";
+            supervisor.innerHTML = "SUPERVISOR";
+            supervisor.style.color = "red";
+
+            rankInfoContainer.appendChild(supervisor);
+        }*/
     }
 }
-
-function loadTenCodes() {
-
-}
-
-loadTenCodes();
 
 //If width of page is less than 1000, run function:
 setInterval(function(){
@@ -1010,3 +1093,77 @@ function fadeIn() {
 function closeWarning() {
     document.getElementById("dim-warning-container").style.visibility = "hidden";
 }
+
+function loadTenCodes() {
+    for(i = 0; i < tenCodesList.length; i++) {
+        var tenCodeContainer = document.createElement("div");
+        tenCodeContainer.id = "ten-code-container" + i;
+        tenCodeContainer.style.border = "white solid 1px";
+        tenCodeContainer.style.backgroundImage = "linear-gradient(#1E1E1E, black)";
+
+        var code = document.createElement("div");
+        code.id = "code" + i;
+        code.innerHTML = tenCodesList[i].name;
+        code.style.color = "white";
+        code.style.padding = "0.5vw 0.75vw";
+        code.style.fontSize = "2vw";
+        code.style.fontWeight = "bold";
+
+        var codeDetails = document.createElement("div");
+        codeDetails.id = "code-details" + i;
+        codeDetails.innerHTML = tenCodesList[i].meaning;
+        codeDetails.style.color = "white";
+        codeDetails.style.padding = "0.5vw 0.75vw";
+        codeDetails.style.fontSize = "1vw";
+        codeDetails.style.fontWeight = "500";
+
+        var mainTenCodeContainer = document.getElementById("tencodes-container");
+        mainTenCodeContainer.appendChild(tenCodeContainer);
+        tenCodeContainer.appendChild(code);
+        tenCodeContainer.appendChild(codeDetails);
+    }
+}
+
+loadTenCodes();
+
+function loadStatusCodes() {
+    for(i = 0; i < statusCodes.length; i++) {
+        var statusCodeContainer = document.createElement("div");
+        statusCodeContainer.id = "status-code-container" + i;
+        statusCodeContainer.style.border = "white solid 1px";
+        statusCodeContainer.style.backgroundImage = "linear-gradient(#1E1E1E, black)";
+
+        var statusCode = document.createElement("div");
+        statusCode.id = "statusCode" + i;
+        statusCode.innerHTML = statusCodes[i].name;
+        if(i == 0) {
+            statusCode.style.color = "green";
+        } else if(i == 1) {
+            statusCode.style.color = "yellow";
+        } else if(i == 2) {
+            statusCode.style.color = "orange";
+        } else if(i == 3) {
+            statusCode.style.color = "#9cff6b";
+        } else if(i == 4) {
+            statusCode.style.color = "red";
+        }
+        statusCode.style.padding = "0.5vw 0.75vw";
+        statusCode.style.fontSize = "2vw";
+        statusCode.style.fontWeight = "bold";
+
+        var statusCodeDetails = document.createElement("div");
+        statusCodeDetails.id = "status-code-details" + i;
+        statusCodeDetails.innerHTML = statusCodes[i].description;
+        statusCodeDetails.style.color = "white";
+        statusCodeDetails.style.padding = "0.5vw 0.75vw";
+        statusCodeDetails.style.fontSize = "1vw";
+        statusCodeDetails.style.fontWeight = "500";
+
+        var mainStatusCodeContainer = document.getElementById("codes-container");
+        mainStatusCodeContainer.appendChild(statusCodeContainer);
+        statusCodeContainer.appendChild(statusCode);
+        statusCodeContainer.appendChild(statusCodeDetails);
+    }
+}
+
+loadStatusCodes();
