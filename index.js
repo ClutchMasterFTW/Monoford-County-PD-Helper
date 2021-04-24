@@ -321,6 +321,20 @@ var charges = [
         sentence: 20,
         amount: 0,
         fine: 1000000
+    },
+    charge46 = {
+        name: "Impersonating an Officer",
+        class: "Felony",
+        sentence: 10,
+        amount: 0,
+        fine: 1000000
+    },
+    charge47 = {
+        name: "Trespassing",
+        class: "Misdeminor",
+        sentence: 5,
+        amount: 0,
+        fine: 1500
     }
 ];
 var ranks = [
