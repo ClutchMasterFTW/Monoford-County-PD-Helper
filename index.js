@@ -1050,7 +1050,7 @@ function openRank(rank) {
         //////////////
         //SUPERVISOR//
         //////////////
-        
+
         /*if(rank == 0 || rank == 1 || rank == 2) {
             var supervisor = document.createElement("div");
             supervisor.id = "supervisor";
@@ -1086,7 +1086,7 @@ function fadeIn() {
         document.getElementById("dim-warning-container").style.opacity = opacity + "%";
         opacity++;
     } else {
-        clearInterval(inteval);
+        clearInterval(interval);
     }
 }
 
