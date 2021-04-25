@@ -648,31 +648,31 @@ function addSentence(param) {
         document.getElementById("sentence-container").style.width = "25vw";
     } else if (sentence >= 60 && sentence < 200) {
         document.getElementById("sentence").innerHTML = "60";
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "red";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 60 && sentence > 45) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "red";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 45 && sentence > 30) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "orange";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 30 && sentence > 10) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "yellow";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 10) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "#54ff00";
         document.getElementById("sentence-container").style.width = "35vw";
@@ -680,7 +680,7 @@ function addSentence(param) {
     if (charges[sliced].fine < 1000000) {
         fine += charges[sliced].fine;
         document.getElementById("fine").innerHTML = "$" + fine;
-        document.getElementById("fine").style.fontSize = "150px";
+        document.getElementById("fine").style.fontSize = "7.75vw";
         if (fine <= 500) {
             document.getElementById("fine").style.color = "#54ff00";
         } else if (fine <= 1000 && fine > 500) {
@@ -694,7 +694,7 @@ function addSentence(param) {
         }
     } else {
         document.getElementById("fine").innerHTML = "Not Ticketable";
-        document.getElementById("fine").style.fontSize = "100px";
+        document.getElementById("fine").style.fontSize = "5vw";
         document.getElementById("fine").style.color = "darkred";
     }
     if(fine < 0) {
@@ -704,11 +704,10 @@ function addSentence(param) {
 
 function removeSentence(param) {
     var sliced = param.slice(12);
-    //FIX THIS SECTION
     if (charges[sliced].fine < 1000000 && charges[sliced].amount > 0) {
         fine -= charges[sliced].fine;
         document.getElementById("fine").innerHTML = "$" + fine;
-        document.getElementById("fine").style.fontSize = "150px";
+        document.getElementById("fine").style.fontSize = "7.75vw";
         if (fine <= 500) {
             document.getElementById("fine").style.color = "#54ff00";
         } else if (fine <= 1000 && fine > 500) {
@@ -723,55 +722,61 @@ function removeSentence(param) {
     } else {
         if(charges[sliced].amount > 0) {
             document.getElementById("fine").innerHTML = "$0";
-            document.getElementById("fine").style.fontSize = "150px";
+            document.getElementById("fine").style.fontSize = "7.75vw";
             document.getElementById("fine").style.color = "#54ff00";
         }
     }
-    //
     if (sentence != 0 && charges[sliced].amount != 0) {
         sentence -= charges[sliced].sentence;
+        charges[sliced].amount--;
+        document.getElementById("chargeAmount" + sliced).innerHTML = charges[sliced].amount;
+    } else {
         charges[sliced].amount--;
         document.getElementById("chargeAmount" + sliced).innerHTML = charges[sliced].amount;
     }
     if (sentence >= 200) {
         document.getElementById("sentence").innerHTML = "Execution";
         document.getElementById("sentence-units").innerHTML = "(Or 60 years)"
-        document.getElementById("sentence").style.fontSize = "100px";
+        document.getElementById("sentence").style.fontSize = "5vw";
         document.getElementById("sentence").style.color = "darkred";
         document.getElementById("sentence-container").style.width = "25vw";
     } else if (sentence >= 60 && sentence < 200) {
         document.getElementById("sentence").innerHTML = "60";
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "red";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 60 && sentence > 45) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "red";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 45 && sentence > 30) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "orange";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 30 && sentence > 10) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "yellow";
         document.getElementById("sentence-container").style.width = "35vw";
     } else if (sentence <= 10) {
         document.getElementById("sentence").innerHTML = sentence;
-        document.getElementById("sentence").style.fontSize = "150px";
+        document.getElementById("sentence").style.fontSize = "7.75vw";
         document.getElementById("sentence-units").innerHTML = "year(s) (minutes)"
         document.getElementById("sentence").style.color = "#54ff00";
         document.getElementById("sentence-container").style.width = "35vw";
     }
     if(fine < 0) {
         fine = 0;
+    }
+    if(charges[sliced].amount < 0) {
+        charges[sliced].amount = 0;
+        document.getElementById("chargeAmount" + sliced).innerHTML = charges[sliced].amount;
     }
 }
 
