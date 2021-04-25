@@ -3,14 +3,14 @@ var charges = [
     charge0 = {
         name: "Murder",
         class: "Felony",
-        sentence: 20,
+        sentence: 10,
         amount: 0,
         fine: 1000000
     },
     charge1 = {
         name: "Murder of a Law Enforcement Officer (LEO)",
         class: "Capital Felony",
-        sentence: 30,
+        sentence: 15,
         amount: 0,
         fine: 1000000
     },
@@ -24,7 +24,7 @@ var charges = [
     charge3 = {
         name: "Distribution of illegal substances",
         class: "Felony",
-        sentence: 10,
+        sentence: 7.5,
         amount: 0,
         fine: 1000000
     },
@@ -38,47 +38,47 @@ var charges = [
     charge5 = {
         name: "Hostage Taking (with a deadly weapon)",
         class: "Felony",
-        sentence: 25,
+        sentence: 15,
         amount: 0,
         fine: 1000000
     },
     charge6 = {
         name: "Home Invasion/Breaking and Entering",
         class: "Felony",
-        sentence: 15,
+        sentence: 8,
         amount: 0,
         fine: 1000000
     },
     charge7 = {
-        name: "Involentary Manslaughter",
+        name: "Impersonating an Officer",
         class: "Felony",
-        sentence: 7.5,
+        sentence: 8,
         amount: 0,
-        fine: 5000
+        fine: 1000000
     },
     charge8 = {
         name: "Assault",
         class: "Felony",
-        sentence: 5,
+        sentence: 4,
         amount: 0,
-        fine: 3500
+        fine: 2500
     },
     charge9 = {
         name: "Assaulting a Law Enforcement Officer (LEO)",
         class: "Felony",
-        sentence: 6.5,
-        amount: 0,
-        fine: 4000
-    },
-    charge10 = {
-        name: "Involentary Vehicular Manslauter",
-        class: "Felony",
         sentence: 5,
         amount: 0,
-        fine: 3000
+        fine: 2750
+    },
+    charge10 = {
+        name: "Involentary Vehicular Manslaughter",
+        class: "Felony",
+        sentence: 4,
+        amount: 0,
+        fine: 2500
     },
     charge11 = {
-        name: "Vehicular Manslauter",
+        name: "Vehicular Manslaughter",
         class: "Felony",
         sentence: 10,
         amount: 0,
@@ -87,23 +87,23 @@ var charges = [
     charge12 = {
         name: "Bank Robbery",
         class: "Felony",
-        sentence: 40,
+        sentence: 25,
         amount: 0,
         fine: 1000000
     },
     charge13 = {
         name: "Gas Station Robbery",
         class: "Felony",
-        sentence: 35,
+        sentence: 23,
         amount: 0,
         fine: 1000000
     },
     charge14 = {
         name: "Distributing illegal firearms",
         class: "Felony",
-        sentence: 15,
+        sentence: 10,
         amount: 0,
-        fine: 1000000
+        fine: 3500
     },
     charge15 = {
         name: "Terrorism",
@@ -129,16 +129,16 @@ var charges = [
     charge18 = {
         name: "Fleeing and Eluding",
         class: "Felony",
-        sentence: 12.5,
+        sentence: 6,
         amount: 0,
         fine: 1000000
     },
     charge19 = {
         name: "Possession of an illegal firearm",
         class: "Felony",
-        sentence: 12.5,
+        sentence: 6,
         amount: 0,
-        fine: 5000
+        fine: 3000
     },
     charge20 = {
         name: "Driving Under the Influence (DUI)",
@@ -157,21 +157,21 @@ var charges = [
     charge22 = {
         name: "Mugging",
         class: "Felony",
-        sentence: 12.5,
+        sentence: 5,
         amount: 0,
         fine: 1000000
     },
     charge23 = {
         name: "Grand Theft Auto",
         class: "Felony",
-        sentence: 7.5,
+        sentence: 8,
         amount: 0,
         fine: 1000000
     },
     charge24 = {
         name: "Grand Theft Auto (of a government vehicle)",
         class: "Felony",
-        sentence: 11.5,
+        sentence: 9,
         amount: 0,
         fine: 1000000
     },
@@ -185,21 +185,21 @@ var charges = [
     charge26 = {
         name: "Unlawful Harrassment",
         class: "Misdeminor",
-        sentence: 0,
+        sentence: 1,
         amount: 0,
-        fine: 800
+        fine: 1000
     },
     charge27 = {
         name: "Obstruction of Justice",
         class: "Misdeminor",
-        sentence: 5,
+        sentence: 4,
         amount: 0,
-        fine: 2750
+        fine: 2000
     },
     charge28 = {
         name: "Resisting Arrest",
         class: "Misdeminor",
-        sentence: 2,
+        sentence: 3,
         amount: 0,
         fine: 1500
     },
@@ -222,42 +222,42 @@ var charges = [
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 50
+        fine: 100
     },
     charge32 = {
         name: "Driving 10 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 150
+        fine: 200
     },
     charge33 = {
         name: "Driving 15 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 300
+        fine: 350
     },
     charge34 = {
         name: "Driving 20 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 550
+        fine: 750
     },
     charge35 = {
         name: "Driving 25 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 750
+        fine: 1000
     },
     charge36 = {
         name: "Driving 30 mph over the speed limit",
         class: "Infraction",
         sentence: 0,
         amount: 0,
-        fine: 1000
+        fine: 1250
     },
     charge37 = {
         name: "Driving 40+ mph over the speed limit",
@@ -276,14 +276,14 @@ var charges = [
     charge39 = {
         name: "Attempted Murder",
         class: "Felony",
-        sentence: 12.5,
+        sentence: 8,
         amount: 0,
         fine: 1000000
     },
     charge40 = {
         name: "Attempted Murder of an LEO",
         class: "Felony",
-        sentence: 15,
+        sentence: 10,
         amount: 0,
         fine: 1000000
     },
@@ -297,14 +297,14 @@ var charges = [
     charge42 = {
         name: "Prison Break",
         class: "Capital Felony",
-        sentence: 60,
+        sentence: 15,
         amount: 0,
         fine: 1000000
     },
     charge43 = {
         name: "Murder of a Department Of Corrections Staff",
         class: "Capital Felony",
-        sentence: 30,
+        sentence: 15,
         amount: 0,
         fine: 1000000
     },
@@ -318,23 +318,44 @@ var charges = [
     charge45 = {
         name: "Arson",
         class: "Felony",
-        sentence: 20,
+        sentence: 15,
         amount: 0,
         fine: 1000000
     },
     charge46 = {
-        name: "Impersonating an Officer",
-        class: "Felony",
-        sentence: 10,
-        amount: 0,
-        fine: 1000000
-    },
-    charge47 = {
         name: "Trespassing",
         class: "Misdeminor",
         sentence: 5,
         amount: 0,
         fine: 1500
+    },
+    charge47 = {
+        name: "Possession of a forged License",
+        class: "Misdeminor",
+        sentence: 4,
+        amount: 0,
+        fine: 2000
+    },
+    charge48 = {
+        name: "Treason",
+        class: "Capital Felony",
+        sentence: 60,
+        amount: 0,
+        fine: 1000000
+    },
+    charge49 = {
+        name: "Wearing a Mask in Public",
+        class: "Misdeminor",
+        sentence: 3,
+        amount: 0,
+        fine: 2000
+    },
+    charge49 = {
+        name: "Possessing a Lockpick or Zipties in Public",
+        class: "Misdeminor",
+        sentence: 3,
+        amount: 0,
+        fine: 2000
     }
 ];
 var ranks = [
