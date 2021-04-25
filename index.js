@@ -546,6 +546,10 @@ var statusCodes = [
     statusCode4 = {
         name: "Code RED",
         description: "Situation where highest use of force is Authorized (Proceed with Caution)"
+    },
+    statusCode5 = {
+        name: "Code 11-99",
+        description: "Officer Pressed their Panic Button (EMERGENCY/Proceed with Caution)"
     }
 ];
 var sentence = 0;
@@ -1172,6 +1176,8 @@ function loadStatusCodes() {
             statusCode.style.color = "#9cff6b";
         } else if(i == 4) {
             statusCode.style.color = "red";
+        } else if(i == 5) {
+            statusCode.style.color = "darkred";
         }
         statusCode.style.padding = "0.5vw 0.75vw";
         statusCode.style.fontSize = "2vw";
