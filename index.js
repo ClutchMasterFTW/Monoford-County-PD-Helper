@@ -498,30 +498,34 @@ var tenCodesList = [
         meaning: "Person(s) with weapon"
     },
     code6 = {
+        name: "10-38",
+        meaning: "Initiating a Traffic Stop with Suspicious Person(s)"
+    },
+    code7 = {
         name: "10-43",
         meaning: "More information needed"
     },
-    code7 = {
+    code8 = {
         name: "10-50",
         meaning: "Accident (Vehicle Collision/Crash)"
     },
-    code8 = {
+    code9 = {
         name: "10-77",
         meaning: "ETA (Estimated Time of Arrival)"
     },
-    code9 = {
+    code10 = {
         name: "10-78",
         meaning: "Assistance Needed"
     },
-    code10 = {
+    code11 = {
         name: "10-80",
         meaning: "Chase in Progress"
     },
-    code11 = {
+    code12 = {
         name: "10-98",
         meaning: "Prison/Jail Break"
     },
-    code12 = {
+    code13 = {
         name: "10-99",
         meaning: "Wanted Individual Found"
     }
