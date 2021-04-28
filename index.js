@@ -356,6 +356,13 @@ var charges = [
         sentence: 3,
         amount: 0,
         fine: 2000
+    },
+    charge50 = {
+        name: "Gross Incompetence",
+        class: "Misdeminor",
+        sentence: 1,
+        amount: 0,
+        fine: 500
     }
 ];
 var ranks = [
