@@ -157,6 +157,125 @@ a {
     overflow-x: hidden;
 }
 
+.charge {
+    border: white solid 1px;
+    background-image: linear-gradient(#1e1e1e, black);
+    height: 5vw;
+}
+
+.charge-name {
+    color: white;
+    padding: 0.5vw 0.75vw;
+    font-size: 1.25vw;
+}
+
+.level {
+    font-weight: bold;
+    padding-left: 0.75vw;
+    padding-bottom: 0.5vw;
+    margin-top: -0.5vw;
+    font-size: 0.8vw;
+}
+
+.CapitalFelony {
+    color: darkred;
+}
+
+.Felony {
+    color: red;
+}
+
+.Misdeminor {
+    color: orange;
+}
+
+.Infraction {
+    color: yellow;
+}
+
+.charge-amount {
+    color: white;
+    font-size: 2.5vw;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    width: 4vw;
+    height: 5vw;
+    position: relative;
+    margin-top: -4vw;
+    left: 28vw;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.charge-add, .charge-remove {
+    color: white;
+    font-size: 2.5vw;
+    border-right: 1px solid white;
+    width: 3.75vw;
+    height: 5vw;
+    position: relative;
+    text-align: center;
+    line-height: 5vw;
+    cursor: pointer;
+}
+
+.charge-add {
+    left: 32vw;
+    margin-top: -4.75vw;
+}
+
+.charge-remove {
+    left: 36vw;
+    margin-top: -5vw;
+}
+
+.charge-add img, .charge-remove img {
+    width: 2vw;
+    filter: invert(100%);
+    user-select: none;
+}
+
+.rank-container {
+    border: white solid 1px;
+    background-image: linear-gradient(#1e1e1e, black);
+    cursor: pointer;
+}
+
+.rank {
+    color: white;
+    padding: 0.5vw 0.75vw;
+    font-size: 1.25vw;
+}
+
+.insignia-container {
+    color: #ffba26;
+    font-size: 1vw;
+    font-weight: 600;
+    width: 15vw;
+    height: 2vw;
+    padding-left: 0.75vw;
+}
+
+.insignia-container img {
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insignia-container .no-image {
+    color: salmon;
+}
+
+.rank-callsign {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    position: relative;
+    top: -2.75vw;
+    left: 61vw;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 0.5vw;
@@ -224,6 +343,10 @@ a {
     display: inline;
     color: #54ff00;
     text-shadow: 3px 5px 1px black;
+}
+
+#sentence.execution{
+    font-size: 100px;
 }
 
 #sentence-units {
@@ -347,15 +470,15 @@ a {
 }
 
 #ranking {
-    visibility: hidden;
+    display: none;
 }
 
 #tencodes {
-    visibility: hidden;
+    display: none;
 }
 
 #about {
-    visibility: hidden;
+    display: none;
 }
 
 #logo2 {
@@ -418,7 +541,7 @@ a {
 }
 
 #coc-main-container {
-    visibility: hidden;
+    display: none;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -444,7 +567,7 @@ a {
     box-shadow: 5px 5px 5px black;
 }
 
-#coc-title {
+.coc.title {
     color: white;
     font-size: 2vw;
     font-weight: bold;
@@ -452,13 +575,92 @@ a {
     text-align: center;
 }
 
-#coc-description {
+.coc.description {
     color: white;
     font-size: 1.5vw;
     text-align: center;
     padding-left: 3vw;
     padding-right: 3vw;
     padding-top: 1vw;
+}
+
+#coc-container .level-title {
+    font-size: 1vw;
+    font-weight: 600;
+    color: salmon;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+#coc-container .police.level-title {
+    margin-top: 2vw;
+}
+
+#coc-container .level-container {
+    width: 15vw;
+    height: 1.25vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.25vw;
+    position: absolute;
+    border: 1px solid white;
+    margin-left: 17.5vw;
+    overflow: hidden;
+}
+
+#coc-container .level {
+    height: 1.25vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+#coc-container .level-value {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1vw;
+    z-index: 5;
+}
+
+.ten-code-container {
+    border: 1px solid white;
+    background-image: linear-gradient(#1e1e1e, black);
+}
+
+.code {
+    color: white;
+    padding: 0.5vw 0.75vw;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.code-details {
+    color: white;
+    padding: .5vw .75vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.status-code-container {
+    border: 1px solid white;
+    background-image: linear-gradient(#1e1e1e, black);
+}
+
+.status-code {
+    padding: .5vw .75vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: green;
+}
+
+.status-code-details {
+    color: white;
+    padding: 0.5vw 0.75vw;
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 #title1 {
