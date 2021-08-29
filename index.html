@@ -4,7 +4,9 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -13,12 +15,12 @@
         <div id="logo-text">Monoford County PD Helper</div>
     </div>
     <ul class="topnav">
-        <li><a id="calculator-tab" class="active" onclick="changeTab('calculator')">Charges Calculator</a></li>
-        <li><a id="ranking-tab" onclick="changeTab('ranking')">Ranking/Chain of Command</a></li>
-        <li><a id="10codes-tab" onclick="changeTab('10codes')">Police 10-Codes</a></li>
-        <li><a id="about-tab" onclick="changeTab('about')">About/Other</a></li>
+        <li><a id="calculator-tab" class="active nav-tab" onclick="changeTab('calculator')">Charges Calculator</a></li>
+        <li><a id="ranking-tab" class='nav-tab' onclick="changeTab('ranking')">Ranking/Chain of Command</a></li>
+        <li><a id="tencodes-tab" class='nav-tab' onclick="changeTab('tencodes')">Police 10-Codes</a></li>
+        <li><a id="about-tab" class='nav-tab' onclick="changeTab('about')">About/Other</a></li>
     </ul>
-    <div id="calculator">
+    <div id="calculator" class='container'>
         <div id="titles-container">
             <div id="charges-title">Charges</div>
             <div id="count">Count</div>
@@ -48,7 +50,7 @@
         </div>
     </div>
 
-    <div id="ranking">
+    <div id="ranking" class='container'>
         <img src="images/logo.png" id="logo2">
         <div id="logo2-text">Monolith County Police Department Chain Of Command</div>
     
@@ -62,13 +64,23 @@
         <div id="coc-main-container">
             <div id="coc-container">
                 <span id="close-coc" onclick="openRank('close')" class="material-icons">close</span>
-                <div id="coc-title"></div>
-                <div id="coc-description"></div>
+                <div class="coc title"></div>
+                <div class="coc description"></div>
+                <div class='player level-title'>Player Level Required:</div>
+                <div class='player level-container'>
+                    <div class='player level'></div>
+                    <div class='player level-value'></div>
+                </div>
+                <div class='police level-title'>Police Level Required:</div>
+                <div class='police level-container'>
+                    <div class='police level'></div>
+                    <div class='police level-value'></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="tencodes">
+    <div id="tencodes" class='container'>
         <div id="tencodes-title">10-Codes</div>
         <div id="tencodes-container"></div>
 
@@ -78,7 +90,7 @@
         <div id="other-codes">A list of all 10-Codes can be found <a href="https://copradar.com/tencodes/" target="_blank" id="color">here</a>.</div>
     </div>
 
-    <div id="about">
+    <div id="about" class='container'>
         <div id="title1">About this Website</div>
         <img src="images/thumbnail.jpg" id="thumbnail">
         <div id="about-text">This website was created entirely by me, and I created it due to many players having lots of trouble figuring out how to be an officer and having many questions in the Department. This websites purpose is to allow for new AND experienced officers to have extra resources when going on duty as any rank in the Monoford or Pine County Police Department. It contains a calculator, which can help you determine the range of minutes you should put a suspect in prison for due to the amount of charges they have (as well as helping you with tickets). It also contains a page about the Chain of Command in the Monoford County Police Department, and a page with all useful police 10-Codes.</div>
@@ -102,7 +114,6 @@
     <div id="warning-text">If you experience any bugs, please send them to ClutchMasterFTW@gmail.com</div>
 
     <div id="credits">Tool Created by <a href="https://monolithservers.com/forums/members/clutch-master-ftw.2510/" target="_blank" id="link">ClutchMasterFTW</a> | v.0.74</div>
-    <script src="index.js"></script>
 </body>
 
 </html>
