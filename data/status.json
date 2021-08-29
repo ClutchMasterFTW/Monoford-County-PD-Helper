@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Code 1",
+      "description": "Respond without ELS or Sirens (NON-URGENT)"
+    },
+    {
+      "name": "Code 2",
+      "description": "Respond with ELS ON and no Sirens (URGENT)"
+    },
+    {
+      "name": "Code 3",
+      "description": "Respond with ELS ON and Sirens (URGENT/EMERGENCY)"
+    },
+    {
+      "name": "Code 4",
+      "description": "Situation is dealt with, return to 10-7 / 10-8"
+    },
+    {
+      "name": "Code RED",
+      "description": "Situation where highest use of force is Authorized (Proceed with Caution)"
+    },
+    {
+      "name": "Code 11-99",
+      "description": "Officer Pressed their Panic Button (EMERGENCY/Proceed with Caution)"
+    }
+  ]

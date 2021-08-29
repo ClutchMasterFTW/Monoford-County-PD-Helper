@@ -1,0 +1,373 @@
+[
+    {
+      "name": "First Degree Murder",
+      "class": "Felony",
+      "sentence": 15,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Second Degree Murder",
+      "class": "Felony",
+      "sentence": 12,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Third Degree Murder",
+      "class": "Felony",
+      "sentence": 6,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Attempted Murder",
+      "class": "Felony",
+      "sentence": 8,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Manslaughter",
+      "class": "Felony",
+      "sentence": 6,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Murder of a Law Enforcement Officer (LEO)",
+      "class": "CapitalFelony",
+      "sentence": 18,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Attempted Murder of an LEO",
+      "class": "CapitalFelony",
+      "sentence": 10,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Robbery",
+      "class": "Felony",
+      "sentence": 5,
+      "amount": 0,
+      "fine": null
+    },
+    {
+        "name": "Armed Robbery",
+        "class": "Felony",
+        "sentence": 15,
+        "amount": 0,
+        "fine": null
+      },
+    {
+        "name": "Bank Robbery",
+        "class": "Felony",
+        "sentence": 25,
+        "amount": 0,
+        "fine": null
+      },
+    {
+      "name": "Burglary",
+      "class": "Felony",
+      "sentence": 8,
+      "amount": 0,
+      "fine": null
+    },
+    {
+        "name": "Assault",
+        "class": "Felony",
+        "sentence": 4,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Battery",
+        "class": "Felony",
+        "sentence": 8,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Aggravated Assault",
+        "class": "Felony",
+        "sentence": 10,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Armed Assault",
+        "class": "Felony",
+        "sentence": 15,
+        "amount": 0,
+        "fine": null
+    },
+    {
+      "name": "Fraud",
+      "class": "Felony",
+      "sentence": 5,
+      "amount": 0,
+      "fine": null
+    },
+    {
+        "name": "Extortion",
+        "class": "Felony",
+        "sentence": 6,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Illegal Trafficking",
+        "class": "Felony",
+        "sentence": 6,
+        "amount": 0,
+        "fine": null
+    },
+    {
+      "name": "Possession of Illegal Contraband",
+      "class": "Felony",
+      "sentence": 5,
+      "amount": 0,
+      "fine": 2500
+    },
+    {
+        "name": "Distribution of Illegal Contraband",
+        "class": "Felony",
+        "sentence": 10,
+        "amount": 0,
+        "fine": 2500
+    },
+    {
+        "name": "Possession (Class A)",
+        "class": "Felony",
+        "sentence": 6,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Distribution (Class A)",
+        "class": "Felony",
+        "sentence": 10,
+        "amount": 0,
+        "fine": null
+    },
+    {
+        "name": "Brandishing (Class A)",
+        "class": "Felony",
+        "sentence": 0,
+        "amount": 0,
+        "fine": 1500
+    },
+    {
+        "name": "Usage (Class A)",
+        "class": "Felony",
+        "sentence": 6,
+        "amount": 0,
+        "fine": 4000
+    },
+    {
+        "name": "Possession (Class B)",
+        "class": "Felony",
+        "sentence": 6,
+        "amount": 0,
+        "fine": 2000
+    },
+    {
+        "name": "Distribution (Class B)",
+        "class": "Felony",
+        "sentence": 8,
+        "amount": 0,
+        "fine": 2500
+    },
+    {
+        "name": "Brandishing (Class B)",
+        "class": "Felony",
+        "sentence": 0,
+        "amount": 0,
+        "fine": 1200
+    },
+    {
+        "name": "Usage (Class B)",
+        "class": "Felony",
+        "sentence": 3,
+        "amount": 0,
+        "fine": 2000
+    },
+    {
+        "name": "Possession (Class C)",
+        "class": "Felony",
+        "sentence": 2,
+        "amount": 0,
+        "fine": 1000
+    },
+    {
+        "name": "Brandishing (Class C)",
+        "class": "Felony",
+        "sentence": 0,
+        "amount": 0,
+        "fine": 500
+    },
+    {
+        "name": "Usage (Class C)",
+        "class": "Felony",
+        "sentence": 3,
+        "amount": 0,
+        "fine": 1200
+    },
+    {
+      "name": "Kidnapping",
+      "class": "Felony",
+      "sentence": 10,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "False Imprisonment",
+      "class": "Felony",
+      "sentence": 8,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Impersonating an Officer",
+      "class": "Felony",
+      "sentence": 6,
+      "amount": 0,
+      "fine": 3000
+    },
+    {
+      "name": "Terrorism",
+      "class": "CapitalFelony",
+      "sentence": 30,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Unlawful Provocation",
+      "class": "Misdeminor",
+      "sentence": 2,
+      "amount": 0,
+      "fine": 2000
+    },
+    {
+      "name": "Fleeing and Eluding",
+      "class": "Felony",
+      "sentence": 6,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Driving Under the Influence (DUI)",
+      "class": "Misdeminor",
+      "sentence": 5,
+      "amount": 0,
+      "fine": 2500
+    },
+    {
+      "name": "Grand Theft Auto",
+      "class": "Felony",
+      "sentence": 10,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Reckless Driving",
+      "class": "Misdeminor",
+      "sentence": 5,
+      "amount": 0,
+      "fine": 2000
+    },
+    {
+      "name": "Obstruction of Justice",
+      "class": "Misdeminor",
+      "sentence": 10,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Resisting Arrest",
+      "class": "Misdeminor",
+      "sentence": 5,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Public Intoxication",
+      "class": "Misdeminor",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 1000
+    },
+    {
+      "name": "Driving without a valid license",
+      "class": "Infraction",
+      "sentence": 5,
+      "amount": 0,
+      "fine": 2000
+    },
+    {
+      "name": "Driving 5 mph over the speed limit",
+      "class": "Infraction",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 250
+    },
+    {
+      "name": "Driving 10 mph over the speed limit",
+      "class": "Infraction",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 500
+    },
+    {
+      "name": "Driving 20 mph over the speed limit",
+      "class": "Infraction",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 1000
+    },
+    {
+      "name": "Parked Illegally",
+      "class": "Infraction",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 500
+    },
+    {
+      "name": "Tinted Windows",
+      "class": "Infraction",
+      "sentence": 0,
+      "amount": 0,
+      "fine": 600
+    },
+    {
+      "name": "Prison Break",
+      "class": "CapitalFelony",
+      "sentence": 10,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Arson",
+      "class": "Felony",
+      "sentence": 15,
+      "amount": 0,
+      "fine": null
+    },
+    {
+      "name": "Trespassing",
+      "class": "Misdeminor",
+      "sentence": 5,
+      "amount": 0,
+      "fine": 2000
+    },
+    {
+      "name": "Treason",
+      "class": "CapitalFelony",
+      "sentence": 30,
+      "amount": 0,
+      "fine": null
+    }
+  ]

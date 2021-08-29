@@ -1,0 +1,58 @@
+[
+    {
+      "name": "10-4",
+      "meaning": "Acknowledgement (OK)"
+    },
+    {
+      "name": "10-7",
+      "meaning": "Out of Service"
+    },
+    {
+      "name": "10-8",
+      "meaning": "In Service"
+    },
+    {
+      "name": "10-20",
+      "meaning": "Location"
+    },
+    {
+      "name": "10-23",
+      "meaning": "Arrived at Scene"
+    },
+    {
+      "name": "10-32",
+      "meaning": "Person(s) with weapon"
+    },
+    {
+      "name": "10-38",
+      "meaning": "Initiating a Traffic Stop with Suspicious Person(s)"
+    },
+    {
+      "name": "10-43",
+      "meaning": "More information needed"
+    },
+    {
+      "name": "10-50",
+      "meaning": "Accident (Vehicle Collision/Crash)"
+    },
+    {
+      "name": "10-77",
+      "meaning": "ETA (Estimated Time of Arrival)"
+    },
+    {
+      "name": "10-78",
+      "meaning": "Assistance Needed"
+    },
+    {
+      "name": "10-80",
+      "meaning": "Chase in Progress"
+    },
+    {
+      "name": "10-98",
+      "meaning": "Prison/Jail Break"
+    },
+    {
+      "name": "10-99",
+      "meaning": "Wanted Individual Found"
+    }
+  ]
