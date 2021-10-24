@@ -369,5 +369,12 @@
       "sentence": 30,
       "amount": 0,
       "fine": null
+    },
+    {
+      "name": "Corruption",
+      "class": "Felony",
+      "sentence": 15,
+      "amount": 0,
+      "fine": null
     }
   ]
